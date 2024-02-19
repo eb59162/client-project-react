@@ -8,6 +8,6 @@ const UseDelete=()=>{
 console.error();
         }
     }
-    return Delete
+    return Delete;
 } 
 export default UseDelete

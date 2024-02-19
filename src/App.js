@@ -13,7 +13,7 @@ import { Route, Routes,  Link} from 'react-router-dom';
 const NewHome = React.lazy(() => import("./componnent/NewHome"))
 
 const ToDo= React.lazy(() => import("./componnent/ToDo"))
-const Photo = React.lazy(() => import("./componnent/Photo"))
+// const Photo = React.lazy(() => import("./componnent/Photo"))
 // const User = React.lazy(() => import("./componnent/User"))
 const Post = React.lazy(() => import("./componnent/Posts"))
 
@@ -33,7 +33,7 @@ function App() {
           <Route path='/' element={<Suspense fallback={<h1 style={{color:"orange"}}>loading..</h1>}><NewHome /></Suspense>} /> 
 
           <Route path='/ToDo' element={<Suspense fallback={<h1 style={{color:"orange"}}>loading..</h1>}><ToDo /></Suspense>} /> 
-          <Route path='/Photo' element={<Suspense fallback={<h1 style={{color:"orange"}}>loading..</h1>}><Photo /></Suspense>} />
+          {/* <Route path='/Photo' element={<Suspense fallback={<h1 style={{color:"orange"}}>loading..</h1>}><Photo /></Suspense>} /> */}
           <Route path='/Posts' element={<Suspense fallback={<h1 style={{color:"orange"}}>loading..</h1>}><Post /></Suspense>} />
        
         {/* <Route path='/' element={<ToDoList />} /> */}

@@ -5,7 +5,7 @@ const UseDelete=()=>{
         try{
             await axios.delete(url)
         }catch(error){
-console.error();(error);
+console.error();
         }
     }
     return Delete

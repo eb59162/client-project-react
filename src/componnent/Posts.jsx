@@ -34,7 +34,6 @@ const Post = () => {
   const Item = {
     "Id": id,
     "Name": name,
-    "Date": date,
     "Tochen": tochen,
     "IsLike": isLike
   }
@@ -76,7 +75,7 @@ const Post = () => {
 
   const handleCheckboxChange = (event) => {
     event.stopPropagation();
-    SetCheked(!cheked);
+    SetIsLike(!isLike);
     dispatch(update({ item: Item }))
     handleClose()
   };
@@ -156,13 +155,13 @@ const Post = () => {
               </Grid>
 
               <Typography color="text.secondary" variant="body2">
-                {describe}
+                {tochen}
               </Typography>
               <Divider variant="middle" />
 
-              <Tooltip title="האם המשימה הושלמה">
+              <Tooltip title=" ? אהבתי">
                 <Checkbox
-                  checked={cheked}
+                  checked={isLike}
                   onChange={handleCheckboxChange}
                 />
               </Tooltip>
@@ -195,21 +194,9 @@ const Post = () => {
                   type="text"
                   fullWidth
                   variant="standard"
-                  value={describe}
-                  onChange={(e) => SetDescribe(e.target.value)}
+                  value={tochen}
+                  onChange={(e) => SetTochen(e.target.value)}
                 />
-                <TextField
-                  autoFocus
-                  margin="dense"
-                  id="date"
-                  label="תאריך"
-                  type="text"
-                  fullWidth
-                  variant="standard"
-                  value={date}
-                  onChange={(e) => SetDate(e.target.value)}
-                />
-
 
               </DialogContent>
               <DialogActions>

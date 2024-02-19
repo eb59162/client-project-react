@@ -9,6 +9,5 @@ console.error();
         }
     }
     return Delete
-
 } 
 export default UseDelete

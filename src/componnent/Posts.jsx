@@ -126,7 +126,7 @@ const Post = () => {
               variant="standard"
               value={tochen}
               onChange={(e) => {
-                SetTochen(e.target.value)
+                SetTochen(e.target.value);
                 console.log("tochen", tochen);
               }}
             />

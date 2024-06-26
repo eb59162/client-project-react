@@ -242,9 +242,7 @@ const FormDialog = () => {
       {
         arr?.map((item) => {
           return (
-
             <div>
-
               <h1>Todo</h1>
               <span>name= {item.name}</span>
               <br />

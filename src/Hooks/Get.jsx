@@ -2,10 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios'
 
 const UseGet = () => {
- 
-    // useEffect=(()=>{
-//    get();
-    // },[])
+
 const[res,setRes]=useState()
    
     const get = async (url) => {
@@ -13,7 +10,6 @@ const[res,setRes]=useState()
             const response = await axios.get(url)
             setRes(response.data)
         } catch (error) { 
-            // alert("Get-error")      
             console.error(error)
         }
     } 

@@ -15,9 +15,6 @@ import Checkbox from '@mui/material/Checkbox';
 import Divider from '@mui/material/Divider';
 import Tooltip from '@mui/material/Tooltip';
 
-// import FormDialog from '.dialog';
-// import { Reducer } from "@reduxjs/toolkit";
-// import { createSlice } from '@reduxjs/toolkit'
 
 const Todo = () => {
 
@@ -32,7 +29,6 @@ const Todo = () => {
   const [name, SetName] = React.useState("")
   const [describe, SetDescribe] = React.useState("")
   const [date, SetDate] = React.useState("")
-  // const [item, SetItem] = React.useState({})
   const [cheked, SetCheked] = React.useState(false);
   const Item = {
     "Id": id,
@@ -56,7 +52,6 @@ const Todo = () => {
   };
 
  const HandleDelete = (Id) => {
-  alert("in handle delete")
     dispatch(Delete({ id: Id }))
   }
 
@@ -258,7 +253,6 @@ const FormDialog = () => {
               <span>date= {item.date}</span>
               <br />
               <span>isComplete ?{item.isComplete}</span>
-              
               <br />
               <button onClick={() => {
 

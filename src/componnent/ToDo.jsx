@@ -255,10 +255,8 @@ const FormDialog = () => {
               <span>isComplete ?{item.isComplete}</span>
               <br />
               <button onClick={() => {
-
                 handleClickOpenEdit();
               }}>edit</button>
-
               <button onClick={() => {
                 alert("delete")
                 HandleDelete(item.Id)

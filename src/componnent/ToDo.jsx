@@ -242,9 +242,7 @@ const FormDialog = () => {
       {
         arr?.map((item) => {
           return (
-
             <div>
-
               <h1>Todo</h1>
               <span>name= {item.name}</span>
               <br />
@@ -255,10 +253,8 @@ const FormDialog = () => {
               <span>isComplete ?{item.isComplete}</span>
               <br />
               <button onClick={() => {
-
                 handleClickOpenEdit();
               }}>edit</button>
-
               <button onClick={() => {
                 alert("delete")
                 HandleDelete(item.Id)
